@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <title>ISS Locator</title>
+</head>
+<body>
+    <nav class="navbar">
+        <img id="navimg" src="logo.png" alt="logo">
+        <img id="navhead" src="heading.png" alt="heading">
+    </nav>
+    <div class="container">
+        <div id="ISSmap"></div>
+        <div class="gridBox">
+            <table>
+                <tr>
+                    <td><strong>LATITUDE</strong></td>
+                    <td id="latitude"></td>
+                </tr>
+                <tr>
+                    <td><strong>LONGITUDE</strong></td>
+                    <td id="longitude"></td>
+                </tr>
+                <tr>
+                    <td><strong>ALTITUDE</strong></td>
+                    <td id="altitude"></td>
+                </tr>
+                <tr>
+                    <td><strong>VELOCITY</strong></td>
+                    <td id="velocity"></td>
+                </tr>
+                <tr>
+                    <td><strong>VISIBILITY</strong></td>
+                    <td id="visibility"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            <p>Copyright ©<span id="year"></span> | This project is made by aryasrivastava17</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
